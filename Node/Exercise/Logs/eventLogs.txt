@@ -1,0 +1,11 @@
+2024-10-03 13:08:05 - e24f9cee-e7b2-4d79-9c26-057e442b126d - This is a test message.
+2024-10-03 13:10:25 - 6df0dfe0-3dee-43a1-ab2d-5b17bba33868 - This is a test message.
+2024-10-03 13:11:43 - 1ca1921f-bb21-4cda-817b-6f463f56be75 - This is a test message.
+2024-10-03 13:16:58 - fee8c984-1677-4e57-a0ac-e5be5a7c63d9 - This is a test message.
+2024-10-03 13:17:03 - f474f785-3c02-4ab8-8c19-14b7546dac6a - This is a test message.
+2024-10-03 13:19:16 - 6a4a2a61-b5ff-4076-9118-65a5dc21112b - This is a test message.
+2024-10-03 13:19:18 - efb95d88-71d5-4e50-8c6f-330736f30792 - new log event emitted
+2024-10-03 13:27:01 - acd7e22b-a2fb-498c-a8d6-87f96dafb3a8 - This is a test message.
+2024-10-03 13:27:03 - 1696ec07-3df0-4a02-b882-6497cce76466 - new log event emitted
+2024-10-03 13:35:12 - c4cc77fc-d5bf-4adf-8634-074466c4d39d - This is a test message.
+2024-10-03 13:35:14 - f878bb4d-6c1f-4798-9785-2e47fbec71cb - new log event emitted
