@@ -1,0 +1,136 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.filters, .favorites {
+    flex: 1 1 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+#eventContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    background-color: bisque;
+}
+
+#favoritesContainer {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.event-item, .favorite-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 1.8rem;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover, .favorite-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+img.lazy-loaded {
+    opacity: 1;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: midnightblue;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.empty__message {
+    font-weight: bolder;
+    font-size: larger;
+    color: gray;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #eventContainer {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    #favoritesContainer {
+        width: 95%;
+    }
+}
+
+@media (min-width: 769px) {
+    .filters, .favorites {
+        flex: 1 1 25%;
+    }
+
+    #eventContainer {
+        flex: 1 1 70%;
+    }
+}
+
+/* Animation for adding events to the DOM */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-item, .favorite-item {
+    animation: fadeIn 0.5s ease-in-out;
+}
