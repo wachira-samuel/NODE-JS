@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Samwel-Ngari-s-workspace-q0nspi.us-east-1.xata.sh/db/Restful-API",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
