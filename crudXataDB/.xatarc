@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Samwel-Ngari-s-workspace-q0nspi.eu-west-1.xata.sh/db/crudXataDB",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
