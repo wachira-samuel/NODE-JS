@@ -1,4 +1,3 @@
-//create an instance of an event
 const EventEmitter = require('events');
 const LogEvents = require('./LogEvent.js');
 
