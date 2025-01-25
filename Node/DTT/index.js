@@ -27,6 +27,4 @@ function directoryToTree(rootDir, depth) {
 
     return getDirectoryTree(rootDir, 0);
 }
-
-// Example usage:
 console.log(JSON.stringify(directoryToTree('dummy_dir', 5), null, 4));
