@@ -1,4 +1,4 @@
-//Import the libraries and Log Event function
+
 const { format } = require("date-fns");
 const path = require("path");
 const { v4: uuidv4 } = require("uuid");
